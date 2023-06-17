@@ -62,15 +62,15 @@ img {
   --color-dark-gray: #333333;
   --color-middle-gray: #666666;
   --color-middlet-gray2: #999999;
-  --color-light-violet: #D1A9F0; 
-  --color-soft-violet: #C283F3; 
-  --color-moderate-violet: #9D5CD0;
+  --color-light-violet: #d1a9f0;
+  --color-soft-violet: #c283f3;
+  --color-moderate-violet: #9d5cd0;
   --color-dark-violet: #7943a4;
-  --color-lime: #30BF39;
-  --color-blue: #26A5E4;
-  --color-red: #D11616;
-  --color-light-gray: #CACACA;
-  --color-light-gray2: #ECECEC;
+  --color-lime: #30bf39;
+  --color-blue: #26a5e4;
+  --color-red: #d11616;
+  --color-light-gray: #cacaca;
+  --color-light-gray2: #ececec;
   --color-wite: #ffffff;
 }
 
@@ -78,6 +78,8 @@ img {
   font-family: "Open Sans", "sans-serif";
   font-weight: 400;
   min-width: 320px;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -97,8 +99,207 @@ img {
   list-style: none;
 }
 
+.btn-reset {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .container {
   max-width: 1630px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+/* header */
+.header {
+  background-color: var(--color-black);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 14px;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 96px;
+  transform: translateX(-59px);
+}
+
+.header__logo {
+  outline: none;
+}
+
+.header__link {
+  position: relative;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--color-wite);
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  outline: none;
+  z-index: 1;
+}
+
+.header__link:focus::after {
+  position: absolute;
+  content: "";
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background-color: var(--color-dark-violet);
+  z-index: -1;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.header__link:hover::after {
+  background-color: transparent;
+}
+
+.header__link:hover {
+  color: var(--color-soft-violet);
+  background-color: transparent;
+}
+
+.header__link:active {
+  color: var(--color-dark-violet);
+}
+
+.header__search {
+  position: relative;
+  outline: none;
+  z-index: 1;
+}
+
+.header__search::after {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.header__search:focus::after {
+  position: absolute;
+  content: "";
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  width: 38px;
+  height: 35px;
+  background-color: var(--color-dark-violet);
+  z-index: -1;
+}
+
+.header__search svg path {
+  fill: var(--color-wite);
+  transition: fill 0.3s ease-in-out;
+}
+
+.header__search svg rect {
+  fill: var(--color-wite);
+  transition: fill 0.3s ease-in-out;
+}
+
+.header__search:hover::after {
+  background-color: transparent;
+}
+
+.header__search:hover svg path {
+  fill: var(--color-soft-violet);
+}
+
+.header__search:hover svg rect {
+  fill: var(--color-soft-violet);
+}
+
+.header__search:active svg path {
+  fill: var(--color-dark-violet);
+}
+
+.header__search:active svg rect {
+  fill: var(--color-dark-violet);
+}
+
+/* hero */
+
+.hero--image {
+  background-image: url("../img/hero-bg.jpg");
+  /* background-size: cover; */
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+}
+
+.hero__content {
+  padding: 146px 0;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 68px;
+  color: var(--color-wite);
+  max-width: 700px;
+}
+
+.hero__descr {
+  margin: 0;
+  margin-bottom: 92px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--color-wite);
+  max-width: 550px;
+}
+
+.btn__hero {
+  position: relative;
+  padding: 21px 35px;
+  background: var(--color-moderate-violet);
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--color-wite);
+  z-index: 1;
+  outline: none;
+}
+
+.btn__hero:focus::after {
+  position: absolute;
+  content: "";
+  top: -3px;
+  right: -3px;
+  left: -3px;
+  bottom: -3px;
+  border: 2px solid #c283f3;
+  border-radius: 100px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.btn__hero:hover::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 100px;
+  border: 3px solid var(--color-light-violet);
+}
+
+.btn__hero:active::after {
+  position: absolute;
+  content: "";
+  background-color: var(--color-dark-violet);
+  border: 3px solid var(--color-moderate-violet);
+  border-radius: 100px;
+  z-index: -1;
+  transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
 }
