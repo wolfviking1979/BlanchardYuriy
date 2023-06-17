@@ -415,7 +415,7 @@ img {
 
 .option {
   display: block;
-  margin-bottom: 0.0em;
+  margin-bottom: 0em;
 }
 
 .radio {
@@ -457,8 +457,11 @@ img {
   transition: box-shadow 0.3s ease-in-out;
 }
 
-
 /* catallog */
+
+.catalog {
+  padding-bottom: 20px;
+}
 
 .catalog__title {
   margin-bottom: 16px;
@@ -506,4 +509,115 @@ img {
   font-size: 16px;
   line-height: 32px;
   color: var(--color-dark-gray);
+}
+
+/* events */
+
+.events {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.events__title {
+  margin-bottom: 16px;
+}
+
+.events__list {
+  --offsets: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.events__item {
+  padding: 313px 50px 50px 50px;
+  width: 500px;
+  min-height: 700px;
+  /* width: calc((100% - gap * var(--offsets) / (var(--offsets) + 1))); */
+  outline: 1px solid aqua;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.events__card--image1 {
+  background-image: url("../img/events-1.png");
+}
+
+.events__card--image2 {
+  background-image: url("../img/events-2.png");
+}
+
+.events__card--image3 {
+  background-image: url("../img/events-3.png");
+}
+
+.events__schedule {
+  margin: 0;
+  display: block;
+  margin-bottom: 13px;
+  max-width: 145px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-middlet-gray2);
+}
+
+.events-item__title {
+  margin: 0;
+  margin-bottom: 8px;
+  max-width: 320px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--color-dark-gray);
+}
+
+.events-item2 .events__schedule {
+  margin-bottom: 30px;
+}
+
+.events-item3 .events-item__title {
+  max-width: 400px;
+}
+
+.events__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--color-dark-gray);
+}
+
+/* projects */
+
+.projects {
+  padding-top: 40px;
+  padding-bottom: 76px;
+  border-bottom: 1px solid #CACACA;
+}
+
+.projects__title {
+  margin-bottom: 15px;
+}
+
+.projects__descr {
+  max-width: 1080px;
+  margin-bottom: 30px;
+}
+
+.partners__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color-dark-gray);
+}
+.partners__list {
+  display: flex;
+  gap: 30px;
+}
+.partners__item {
+  padding: 27px 27px;
+  width: 329px;
+  border: 1px solid #CACACA;
 }
