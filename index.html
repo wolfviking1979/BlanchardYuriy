@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <script defer src="library/inputmask.min.js"></script>
     <script defer src="library/just-validate.min.js"></script>
     <script defer src="js/main.js"></script>
@@ -18,53 +19,85 @@
   <body class="page">
     <header class="header">
       <div class="container header__container">
-        <a class="header__logo">
-          <img src="./img/header-logo.svg" alt="Blanchard logo" />
-        </a>
-        <nav class="nav">
-          <ul class="header__list list-reset">
-            <li class="header__item">
-              <a href="#about" class="header__link">О&nbsp;нас</a>
-            </li>
-            <li class="header__item">
-              <a href="#gallery" class="header__link">Галерея</a>
-            </li>
-            <li class="header__item">
-              <a href="#catalog" class="header__link">Каталог</a>
-            </li>
-            <li class="header__item">
-              <a href="#events" class="header__link">События</a>
-            </li>
-            <li class="header__item">
-              <a href="#projects" class="header__link">Проекты</a>
-            </li>
-            <li class="header__item">
-              <a href="#contacts" class="header__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="btn-reset header__search">
-          <svg
-            width="28"
-            height="28"
-            viewBox="0 0 28 28"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              width="8.79564"
-              height="2.19891"
-              transform="matrix(-0.711314 0.702874 0.711314 0.702874 6.25647 20.2722)"
+        <div class="header__top">
+          <a class="header__logo">
+            <picture>
+              <source
+                media="(max-width: 1024px)"
+                srcset="img/1024/header-logo-1024.svg"
+              />
+              <img src="./img/header-logo.svg" alt="Blanchard logo" />
+            </picture>
+          </a>
+          <nav class="nav">
+            <ul class="header__list list-reset">
+              <li class="header__item">
+                <a href="#about" class="header__link">О&nbsp;нас</a>
+              </li>
+              <li class="header__item">
+                <a href="#gallery" class="header__link">Галерея</a>
+              </li>
+              <li class="header__item">
+                <a href="#catalog" class="header__link">Каталог</a>
+              </li>
+              <li class="header__item">
+                <a href="#events" class="header__link">События</a>
+              </li>
+              <li class="header__item">
+                <a href="#projects" class="header__link">Проекты</a>
+              </li>
+              <li class="header__item">
+                <a href="#contacts" class="header__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="btn-reset header__search">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
               fill="none"
-            />
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M15.3286 23.3112C9.54218 23.3112 5.06477 18.549 5.06477 12.9507C5.06477 7.35228 9.54218 2.59013 15.3286 2.59013C21.115 2.59013 25.5924 7.35228 25.5924 12.9507C25.5924 18.549 21.115 23.3112 15.3286 23.3112ZM15.3286 25.9013C8.33038 25.9013 2.6572 20.1031 2.6572 12.9507C2.6572 5.79821 8.33038 0 15.3286 0C22.3268 0 28 5.79821 28 12.9507C28 20.1031 22.3268 25.9013 15.3286 25.9013Z"
-              fill="none"
-            />
-          </svg>
-        </button>
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                width="8.79564"
+                height="2.19891"
+                transform="matrix(-0.711314 0.702874 0.711314 0.702874 6.25647 20.2722)"
+                fill="none"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15.3286 23.3112C9.54218 23.3112 5.06477 18.549 5.06477 12.9507C5.06477 7.35228 9.54218 2.59013 15.3286 2.59013C21.115 2.59013 25.5924 7.35228 25.5924 12.9507C25.5924 18.549 21.115 23.3112 15.3286 23.3112ZM15.3286 25.9013C8.33038 25.9013 2.6572 20.1031 2.6572 12.9507C2.6572 5.79821 8.33038 0 15.3286 0C22.3268 0 28 5.79821 28 12.9507C28 20.1031 22.3268 25.9013 15.3286 25.9013Z"
+                fill="none"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="header__bottom">
+          <nav class="nav">
+            <ul class="header__bottom-list list-reset">
+              <li class="header__item">
+                <a href="#about" class="header__link">О&nbsp;нас</a>
+              </li>
+              <li class="header__item">
+                <a href="#gallery" class="header__link">Галерея</a>
+              </li>
+              <li class="header__item">
+                <a href="#catalog" class="header__link">Каталог</a>
+              </li>
+              <li class="header__item">
+                <a href="#events" class="header__link">События</a>
+              </li>
+              <li class="header__item">
+                <a href="#projects" class="header__link">Проекты</a>
+              </li>
+              <li class="header__item">
+                <a href="#contacts" class="header__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -87,7 +120,8 @@
       </section>
       <section id="about" class="about">
         <div class="container">
-          <h2 class="section-title about__title">О&nbsp;нас</h2>
+          <div class="about__wrapper">
+            <h2 class="section-title about__title">О&nbsp;нас</h2>
           <p class="section-text about__descr">
             Ясность нашей позиции очевидна: семантический разбор внешних
             противодействий однозначно определяет каждого участника как
@@ -103,14 +137,15 @@
             оппозиции набирают популярность среди определённых слоёв населения,
             а&nbsp;значит, должны быть разоблачены.
           </p>
+          </div>
         </div>
       </section>
       <section id="gallery" class="gallery">
         <div class="gallery__wrapper gallery--image">
           <div class="container gallery__container">
-            <h2 class="section-title gallery__title">Галерея</h2>
-            <div class="gallery__content">
-              <div class="gallary__side-left">
+            <div class="gallery__sides-wraper">
+              <div class="gallery__side-left">
+                <h2 class="section-title gallery__title">Галерея</h2>
                 <ul class="list-reset galery-side__list">
                   <li class="galery-side__item">
                     <label class="radio option">
@@ -140,16 +175,34 @@
                   </li>
                 </ul>
               </div>
-              <div class="gallary__side-right">
+              <div class="gallery__side-right">
                 <ul class="gallery__list list-reset">
                   <li class="gallery__item">
-                    <img src="./img/gallary-page-1.png" alt="" />
+                    <picture>
+                      <source
+                        media="(max-width: 1196px)"
+                        srcset="img/1024/gallary-page-1.jpg"
+                      />
+                      <img src="./img/gallary-page-1.png" alt="Картина-1" />
+                    </picture>
                   </li>
                   <li class="gallery__item">
-                    <img src="./img/gallary-page-2.png" alt="" />
+                    <picture>
+                      <source
+                        media="(max-width: 1196px)"
+                        srcset="img/1024/gallary-page-2.jpg"
+                      />
+                      <img src="./img/gallary-page-2.png" alt="Картина-2" />
+                    </picture>
                   </li>
                   <li class="gallery__item">
-                    <img src="./img/gallary-page-3.png" alt="" />
+                    <picture>
+                      <source
+                        media="(max-width: 1196px)"
+                        srcset="img/1024/gallary-page-3.jpg"
+                      />
+                      <img src="./img/gallary-page-3.png" alt="Картина-3" />
+                    </picture>
                   </li>
                 </ul>
               </div>
@@ -173,10 +226,18 @@
             <ul class="list-reset catalog__list">
               <li class="catalog__item">
                 <div class="cards catalog__card">
-                  <img
-                    src="./img/catalog-1.jpg"
-                    alt="Доменико Гирландайо портрет"
-                  />
+                  <div class="catalog-image">
+                    <picture>
+                      <source
+                        media="(max-width: 1350px)"
+                        srcset="./img/1024/catalog-1-1024.jpg"
+                      />
+                      <img
+                        src="./img/catalog-1.jpg"
+                        alt="Доменико Гирландайо портрет"
+                      />
+                    </picture>
+                  </div>
                   <div class="card__content">
                     <h3 class="cards__title card__title">
                       Доменико Гирландайо
@@ -184,7 +245,7 @@
                     <span class="cards__date card__date"
                       >2&nbsp;июня 1448&ndash;11 января 1494</span
                     >
-                    <div class="cards__descr card__descr">
+                    <div class="card__descr">
                       Один из&nbsp;ведущих флорентийских художников Кватроченто,
                       основатель художественной династии, которую продолжили его
                       брат Давид и&nbsp;сын Ридольфо. Глава художественной
@@ -200,10 +261,16 @@
               </li>
               <li class="catalog__item">
                 <div class="cards catalog__card">
-                  <img
-                    src="./img/catalog-2.jpg"
-                    alt="Андреа дель Верроккьо портрет"
-                  />
+                  <div class="catalog-image">
+                    <picture>
+                      <source media="(max-width: 1350px)" srcset="img/1024/catalog-2-1024.jpg">
+                      <img
+                        src="./img/catalog-2.jpg"
+                        alt="Андреа дель Верроккьо портрет"
+                      />
+                    </picture>
+                  </div>
+
                   <div class="card__content">
                     <h3 class="cards__title card__title">
                       Андреа дель Верроккьо
@@ -228,10 +295,17 @@
               </li>
               <li class="catalog__item">
                 <div class="cards catalog__card">
-                  <img
+                  <div class="catalog-image">
+                    <picture>
+                      <source media="(max-width: 1350px)" srcset="img/1024/catalog-3-1024.jpg">
+                           <img
                     src="./img/catalog-3.jpg"
                     alt="Лоренцо ди Креди портрет"
                   />
+                    </picture>
+                
+                  </div>
+                 
                   <div class="card__content">
                     <h3 class="cards__title card__title">
                       Лоренцо ди&nbsp;Креди
@@ -259,23 +333,25 @@
       </section>
       <section id="events" class="events">
         <div class="container events__container">
+        <div class="events__wrapper">
           <h2 class="section-title events__title">События</h2>
           <ul class="list-reset events__list">
             <li class="events__item">
               <picture>
+                <source media="(max-width: 1024px)" srcset="img/1024/events-1-1024.jpg">
                 <img
                   class="events__image"
                   src=".\img\events-1.png"
-                  alt=""
+                  alt="Книжная гравюра"
                   aria-hidden="true"
                 />
               </picture>
               <div class="events-item__content">
                 <span class="events__text"
-                  >Музей им. Щусева с 20&nbsp;марта по&nbsp;30&nbsp;апреля</span
+                  >Музей им. Щусева с&nbsp;20&nbsp;марта&nbsp;по&nbsp;30&nbsp;апреля</span
                 >
                 <h4 class="card__title events-item__title">
-                  Книжная гравюра в&nbsp;живом&nbsp;восприятии
+                  Книжная гравюра в&nbsp;живом восприятии
                 </h4>
                 <p class="card__descr events__descr">
                   Один из&nbsp;ведущих флорентийских художников Кватроченто,
@@ -287,10 +363,11 @@
             </li>
             <li class="events__item">
               <picture>
+                <source media="(max-width: 1024px)" srcset="img/1024/events-2-1024.jpg">
                 <img
                   class="events__image"
                   src=".\img\events-2.png"
-                  alt=""
+                  alt="Открытая дискуссия"
                   aria-hidden="true"
                 />
               </picture>
@@ -309,6 +386,7 @@
             </li>
             <li class="events__item">
               <picture>
+                <source media="(max-width: 1024px)" srcset="img/1024/events-3-1024.jpg">
                 <img
                   class="events__image"
                   src=".\img\events-3.png"
@@ -334,10 +412,12 @@
             </li>
           </ul>
         </div>
+        </div>
       </section>
       <section id="projects" class="projects">
         <div class="container projects__container">
-          <h2 class="section-title projects__title">Проекты</h2>
+          <div class="projects__wrapper">
+            <h2 class="section-title projects__title">Проекты</h2>
           <p class="section-text projects__descr">
             Предварительные выводы: постоянное информационно-пропагандистское
             обеспечение нашей деятельности однозначно фиксирует необходимость
@@ -371,107 +451,110 @@
               </li>
             </ul>
           </div>
+          </div>
         </div>
       </section>
       <section id="contacts" class="contacts">
         <div class="container contacts__container">
-          <div class="contacts__headeng">
-            <h4 class="card__title contacts__title">Шоурум &#8470;&nbsp;4</h4>
-            <address class="card__descr contacts__address">
-              Леонтьевский переулок, дом 5/1
-            </address>
-          </div>
-          <div class="contacts__forms">
-            <form
-              id="form"
-              class="form"
-              action="#"
-              method="POST"
-              enctype="multipart/form-data"
-            >
-              <div class="contacts__inputs">
-                <div class="contacts__input">
-                  <input
-                  class="form__input"
-                  type="text"
-                  name="name"
-                  placeholder="Имя*"
-                  required
-                  data-validate-field="name"
-                  aria-label="Напишите ваше имя"
-                />
-                </div>
-                <div class="contacts__input">
-                  <input
-                  class="form__input input__phone"
-                  type="tel"
-                  name="phone"
-                  placeholder="Телефон*"
-                  required
-                  data-validate-field="phone"
-                  aria-label="Напишите свой телефон"
-                />
-                </div>
-                <button class="btn-reset form__btn">
-                  Заказать обратный звонок
-                </button>
-              </div>
-            </form>
-          </div>
-          <div class="contacts__message">
-            <h4 class="card__title message__title">Связаться в один клик</h4>
-            <a href="" class="message__link">
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+          <div class="contacts__wrapper">
+            <div class="contacts__heading">
+              <h4 class="card__title contacts__title">Шоурум &#8470;&nbsp;4</h4>
+              <address class="card__descr contacts__address">
+                Леонтьевский переулок, дом 5/1
+              </address>
+            </div>
+            <div class="contacts__forms">
+              <form
+                id="form"
+                class="form"
+                action="#"
+                method="POST"
+                enctype="multipart/form-data"
               >
-                <g clip-path="url(#clip0_191243_648)">
-                  <path
-                    d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z"
-                    fill="#30BF39"
-                  />
-                  <path
-                    d="M25.8749 21.751C25.6249 21.626 24.3124 20.876 24.0624 20.8135C23.8124 20.6885 23.6249 20.6885 23.4374 20.9385C23.2499 21.1885 22.6874 21.8135 22.5624 21.9385C22.3749 22.126 22.2499 22.126 21.9999 22.001C21.7499 21.876 20.8749 21.5635 19.8749 20.5635C19.1249 19.8135 18.5624 18.9385 18.4374 18.626C18.3124 18.376 18.4374 18.1885 18.5624 18.0635C18.6874 17.9385 18.8124 17.751 18.9999 17.626C19.1874 17.501 19.1874 17.376 19.3124 17.1885C19.4374 17.001 19.3749 16.876 19.3124 16.6885C19.2499 16.501 18.7499 15.1885 18.5624 14.626C18.3749 14.0635 18.1249 14.1885 17.9999 14.126C17.8124 14.126 17.6874 14.0635 17.4999 14.0635C17.2499 14.0635 16.9374 14.1885 16.7499 14.376C16.4999 14.626 15.7499 15.251 15.7499 16.5635C15.7499 17.876 16.6249 19.251 16.7499 19.376C16.8749 19.5635 18.4999 22.4385 21.1874 23.626C23.8749 24.8135 23.8749 24.4385 24.3749 24.4385C24.8749 24.4385 25.9999 23.8135 26.2499 23.251C26.4999 22.626 26.4999 22.0635 26.4374 22.001C26.3124 22.001 26.1249 21.9385 25.8749 21.751ZM20.8749 28.1885C19.1249 28.1885 17.4999 27.6885 16.0624 26.751L12.6874 27.8135L13.8124 24.5635C12.7499 23.0635 12.1249 21.251 12.1249 19.376C12.1249 14.501 16.0624 10.5635 20.9374 10.5635C25.8124 10.5635 29.6874 14.501 29.6874 19.376C29.6874 24.251 25.7499 28.1885 20.8749 28.1885ZM20.8749 8.81348C15.0624 8.81348 10.3124 13.5635 10.3124 19.376C10.3124 21.3135 10.8124 23.1885 11.8124 24.8135L9.87488 30.501L15.7499 28.626C17.3124 29.501 19.0624 29.9385 20.8749 29.9385C26.6874 29.9385 31.4374 25.1885 31.4374 19.376C31.4374 13.5635 26.7499 8.81348 20.8749 8.81348Z"
-                    fill="white"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_191243_648">
-                    <rect width="40" height="40" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-            <a href="" class="message__link">
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_191243_651)">
-                  <path
-                    d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"
-                    fill="#26A5E4"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M9.05308 19.7889L20.7167 14.7649C26.2709 12.4547 27.425 12.0534 28.1772 12.0402C28.3427 12.0373 28.7126 12.0783 28.9522 12.2727C29.1546 12.4369 29.2102 12.6587 29.2369 12.8143C29.2636 12.9699 29.2967 13.3246 29.2704 13.6017C28.9694 16.7641 27.667 24.4386 27.0044 27.9806C26.724 29.4794 26.1724 29.9819 25.6376 30.0311C24.4762 30.138 23.5942 29.2635 22.4693 28.5261L18.006 25.528C16.0313 24.2268 17.3114 23.5116 18.4368 22.3428C18.7312 22.0368 23.8486 17.3823 23.9476 16.96C23.9596 16.9072 23.9714 16.7104 23.8545 16.6064C23.7376 16.5024 23.5649 16.5384 23.4404 16.5663C23.2639 16.6064 20.4518 18.465 15.0043 22.1423C14.2061 22.6904 13.4831 22.9575 12.8354 22.9435C12.1213 22.9281 10.7476 22.5397 9.72648 22.2078C8.47396 21.8007 7.47848 21.5854 7.5652 20.8939C7.61032 20.5338 8.10628 20.1655 9.05304 19.789L9.05308 19.7889Z"
-                    fill="white"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_191243_651">
-                    <rect width="40" height="40" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
+                <div class="contacts__inputs">
+                  <div class="contacts__input">
+                    <input
+                      class="form__input"
+                      type="text"
+                      name="name"
+                      placeholder="Имя*"
+                      required
+                      data-validate-field="name"
+                      aria-label="Напишите ваше имя"
+                    />
+                  </div>
+                  <div class="contacts__input">
+                    <input
+                      class="form__input input__phone"
+                      type="tel"
+                      name="phone"
+                      placeholder="Телефон*"
+                      required
+                      data-validate-field="phone"
+                      aria-label="Напишите свой телефон"
+                    />
+                  </div>
+                  <button class="btn-reset form__btn">
+                    Заказать обратный звонок
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="contacts__message">
+              <h4 class="card__title message__title">Связаться в один клик</h4>
+              <a href="" class="message__link">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_191243_648)">
+                    <path
+                      d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z"
+                      fill="#30BF39"
+                    />
+                    <path
+                      d="M25.8749 21.751C25.6249 21.626 24.3124 20.876 24.0624 20.8135C23.8124 20.6885 23.6249 20.6885 23.4374 20.9385C23.2499 21.1885 22.6874 21.8135 22.5624 21.9385C22.3749 22.126 22.2499 22.126 21.9999 22.001C21.7499 21.876 20.8749 21.5635 19.8749 20.5635C19.1249 19.8135 18.5624 18.9385 18.4374 18.626C18.3124 18.376 18.4374 18.1885 18.5624 18.0635C18.6874 17.9385 18.8124 17.751 18.9999 17.626C19.1874 17.501 19.1874 17.376 19.3124 17.1885C19.4374 17.001 19.3749 16.876 19.3124 16.6885C19.2499 16.501 18.7499 15.1885 18.5624 14.626C18.3749 14.0635 18.1249 14.1885 17.9999 14.126C17.8124 14.126 17.6874 14.0635 17.4999 14.0635C17.2499 14.0635 16.9374 14.1885 16.7499 14.376C16.4999 14.626 15.7499 15.251 15.7499 16.5635C15.7499 17.876 16.6249 19.251 16.7499 19.376C16.8749 19.5635 18.4999 22.4385 21.1874 23.626C23.8749 24.8135 23.8749 24.4385 24.3749 24.4385C24.8749 24.4385 25.9999 23.8135 26.2499 23.251C26.4999 22.626 26.4999 22.0635 26.4374 22.001C26.3124 22.001 26.1249 21.9385 25.8749 21.751ZM20.8749 28.1885C19.1249 28.1885 17.4999 27.6885 16.0624 26.751L12.6874 27.8135L13.8124 24.5635C12.7499 23.0635 12.1249 21.251 12.1249 19.376C12.1249 14.501 16.0624 10.5635 20.9374 10.5635C25.8124 10.5635 29.6874 14.501 29.6874 19.376C29.6874 24.251 25.7499 28.1885 20.8749 28.1885ZM20.8749 8.81348C15.0624 8.81348 10.3124 13.5635 10.3124 19.376C10.3124 21.3135 10.8124 23.1885 11.8124 24.8135L9.87488 30.501L15.7499 28.626C17.3124 29.501 19.0624 29.9385 20.8749 29.9385C26.6874 29.9385 31.4374 25.1885 31.4374 19.376C31.4374 13.5635 26.7499 8.81348 20.8749 8.81348Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_191243_648">
+                      <rect width="40" height="40" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="" class="message__link">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_191243_651)">
+                    <path
+                      d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"
+                      fill="#26A5E4"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.05308 19.7889L20.7167 14.7649C26.2709 12.4547 27.425 12.0534 28.1772 12.0402C28.3427 12.0373 28.7126 12.0783 28.9522 12.2727C29.1546 12.4369 29.2102 12.6587 29.2369 12.8143C29.2636 12.9699 29.2967 13.3246 29.2704 13.6017C28.9694 16.7641 27.667 24.4386 27.0044 27.9806C26.724 29.4794 26.1724 29.9819 25.6376 30.0311C24.4762 30.138 23.5942 29.2635 22.4693 28.5261L18.006 25.528C16.0313 24.2268 17.3114 23.5116 18.4368 22.3428C18.7312 22.0368 23.8486 17.3823 23.9476 16.96C23.9596 16.9072 23.9714 16.7104 23.8545 16.6064C23.7376 16.5024 23.5649 16.5384 23.4404 16.5663C23.2639 16.6064 20.4518 18.465 15.0043 22.1423C14.2061 22.6904 13.4831 22.9575 12.8354 22.9435C12.1213 22.9281 10.7476 22.5397 9.72648 22.2078C8.47396 21.8007 7.47848 21.5854 7.5652 20.8939C7.61032 20.5338 8.10628 20.1655 9.05304 19.789L9.05308 19.7889Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_191243_651">
+                      <rect width="40" height="40" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -519,8 +602,5 @@
         </div>
       </div>
     </footer>
-    <script>
-      const validate = new window.JustValidate("#form");
-    </script>
   </body>
 </html>
