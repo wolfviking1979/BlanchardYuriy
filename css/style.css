@@ -529,7 +529,9 @@ img {
 }
 
 .events__list {
+  --offsets: 2;
   display: flex;
+  flex-wrap: wrap;
   gap: 50px;
 }
 
@@ -537,11 +539,8 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: calc((100% - (50px * 2)) / 3);
-  /* min-height: 700px;
-  max-width: 500px; */
+  width: calc((100% - (50px * var(--offsets))) / (var(--offsets) + 1 ));
   border: 1px solid #cacaca;
-  /* flex-shrink: 0; */
 }
 
 .events-item__content {
